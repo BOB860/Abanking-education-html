@@ -1,16 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antools — tools for Designer &amp; Developer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body class="page">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+    <header class="header">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__icon" src="./assets/Group 159.svg" alt="antools logo" />
+          <span class="logo__name">antools<span class="logo__dot">.</span></span>
+        </a>
 
-<body>
-    
-</body>
+        <nav class="nav">
+          <a class="nav__link" href="#">Home</a>
+          <a class="nav__link nav__link--dropdown" href="#">Categories</a>
+          <a class="nav__link" href="#">My Collections</a>
+          <a class="nav__link" href="#">Blog</a>
+        </nav>
 
+        <div class="header__actions">
+          <a class="header__login" href="#">Login</a>
+          <button class="button button--primary" type="button">Sign Up</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Awesome tools for<br />Designer &amp; Developer<span class="hero__title-dot">.</span></h1>
+          <p class="hero__text">Antool is a web collection of information on paid or free Design and Development tools</p>
+
+          <form class="search" action="#">
+            <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <line x1="15.5" y1="15.5" x2="21" y2="21" />
+            </svg>
+            <input class="search__input" type="text" placeholder="Find more than 430+ tools..." />
+            <button class="button button--primary search__button" type="submit">Search</button>
+          </form>
+
+
+          <div class="socials">
+            <a class="socials__link" href="#" aria-label="Facebook">
+              <svg class="socials__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.6V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.3H7.6V13h2.7v8h3.2z"/></svg>
+            </a>
+            <a class="socials__link" href="#" aria-label="Instagram">
+              <svg class="socials__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a class="socials__link" href="#" aria-label="Twitter">
+              <svg class="socials__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.2-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.9a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4-.6.2-1.2.2-1.8.1a4.1 4.1 0 0 0 3.8 2.8A8.2 8.2 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <img class="hero__picture" src="./assets/Illustration.svg" alt="Developer tools illustration" />
+        </div>
+      </div>
+    </section>
+
+    <section class="tools">
+      <h2 class="tools__title">Most Popular Tools</h2>
+      <p class="tools__subtitle">Tools for the best Designers and Developers<br />most popularly used in the world</p>
+
+      <div class="tools__grid">
+
+        <article class="tool-card">
+          <div class="tool-card__header">
+            <img class="tool-card__icon" src="./assets/grommet-icons_figma.svg" alt="Figma" />
+            <div class="tool-card__info">
+              <h3 class="tool-card__name">Figma</h3>
+              <p class="tool-card__price tool-card__price--free">Free</p>
+            </div>
+          </div>
+          <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="tool-card__actions">
+            <button class="tool-card__action tool-card__action--like" type="button" aria-label="Like">❤</button>
+            <button class="tool-card__action" type="button" aria-label="Save to collection">🗂</button>
+            <a class="tool-card__visit" href="#">Visit</a>
+          </div>
+        </article>
+
+        <article class="tool-card tool-card--active">
+          <div class="tool-card__header">
+            <img class="tool-card__icon" src="./assets/logos_sketch.svg" alt="Sketch" />
+            <div class="tool-card__info">
+              <h3 class="tool-card__name">Sketch</h3>
+              <p class="tool-card__price">Trial &amp; Paid</p>
+            </div>
+          </div>
+          <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="tool-card__actions">
+            <button class="tool-card__action tool-card__action--like" type="button" aria-label="Like">
+              <img class="tool-card__action-icon" src="./assets/Group 1376.svg" alt="" />
+            </button>
+            <button class="tool-card__action" type="button" aria-label="Save to collection">
+              <img class="tool-card__action-icon" src="./assets/Group 1375.svg" alt="" />
+            </button>
+            <button class="button button--primary tool-card__visit-button" type="button">Visit</button>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <div class="tool-card__header">
+            <img class="tool-card__icon" src="./assets/logos_visual-studio-code.svg" alt="Visual Studio Code" />
+            <div class="tool-card__info">
+              <h3 class="tool-card__name">Visual Studio Code</h3>
+              <p class="tool-card__price tool-card__price--free">Free</p>
+            </div>
+          </div>
+          <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="tool-card__actions">
+            <button class="tool-card__action tool-card__action--like" type="button" aria-label="Like">❤</button>
+            <button class="tool-card__action" type="button" aria-label="Save to collection">🗂</button>
+            <a class="tool-card__visit" href="#">Visit</a>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <div class="tool-card__header">
+            <img class="tool-card__icon" src="./assets/notion.svg" alt="Notion" />
+            <div class="tool-card__info">
+              <h3 class="tool-card__name">Notion</h3>
+              <p class="tool-card__price">Free &amp; Paid</p>
+            </div>
+          </div>
+          <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="tool-card__actions">
+            <button class="tool-card__action tool-card__action--like" type="button" aria-label="Like">❤</button>
+            <button class="tool-card__action" type="button" aria-label="Save to collection">🗂</button>
+            <a class="tool-card__visit" href="#">Visit</a>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <div class="tool-card__header">
+            <img class="tool-card__icon" src="./assets/grommet-icons_slack.svg" alt="Slack" />
+            <div class="tool-card__info">
+              <h3 class="tool-card__name">Slack</h3>
+              <p class="tool-card__price">Free &amp; Paid</p>
+            </div>
+          </div>
+          <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="tool-card__actions">
+            <button class="tool-card__action tool-card__action--like" type="button" aria-label="Like">❤</button>
+            <button class="tool-card__action" type="button" aria-label="Save to collection">🗂</button>
+            <a class="tool-card__visit" href="#">Visit</a>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <div class="tool-card__header">
+            <img class="tool-card__icon" src="./assets/logos_invision-icon.svg" alt="Invision" />
+            <div class="tool-card__info">
+              <h3 class="tool-card__name">Invision</h3>
+              <p class="tool-card__price">Free &amp; Paid</p>
+            </div>
+          </div>
+          <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="tool-card__actions">
+            <button class="tool-card__action tool-card__action--like" type="button" aria-label="Like">❤</button>
+            <button class="tool-card__action" type="button" aria-label="Save to collection">🗂</button>
+            <a class="tool-card__visit" href="#">Visit</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="tools__more">
+        <button class="load-more" type="button">Load more</button>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="brands__inner">
+        <h2 class="brands__title">Trusted more than 150+ brand</h2>
+        <div class="brands__list">
+          <img class="brands__logo" src="./assets/logos_microsoft.svg" alt="Microsoft" />
+          <img class="brands__logo" src="./assets/logos_google.svg" alt="Google" />
+          <img class="brands__logo" src="./assets/logos_slack.svg" alt="Slack" />
+          <img class="brands__logo" src="./assets/logos_wordpress.svg" alt="WordPress" />
+        </div>
+      </div>
+    </section>
+
+  </body>
 </html>
